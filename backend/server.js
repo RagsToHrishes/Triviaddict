@@ -37,7 +37,7 @@ connection.once('open', () => {
 
 //Setting up the router for the /user page
 const usersRouter = require('./routes/user');
-app.use('/user', usersRouter);
+app.use('/api/user', usersRouter);
 
 
 //Starting the app by making it listen on this port
