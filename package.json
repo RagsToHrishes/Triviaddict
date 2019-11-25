@@ -8,7 +8,7 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix ../triviaddict",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "npm install --prefix ../triviaddict && npm run build --prefix ../triviaddict"
+    "heroku-postbuild": "npm install --prefix ./triviaddict && npm run build --prefix ./triviaddict"
   },
   "keywords": [],
   "author": "",
