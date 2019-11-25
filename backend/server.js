@@ -14,12 +14,12 @@ require('dotenv').config();
 const app = express();
 
 if(process.env.NODE_ENV === "production"){
-  app.use(express.static("triviaddict/build "))
+  app.use(express.static("./triviaddict/build"))
   app.get("*", (req,res) => {
-    res.sendFile(path.resolve(__dirname, "triviaddict", "build", "index.html"))
+    res.sendFile("./triviaddict/build/index.html")
   })
 }
-//path.resolve("/app", "../triviaddict", "build", "index.html")
+//path.resolve(__dirname, "triviaddict", "build", "index.html")
 const port = process.env.PORT || 5000;
 
 //Using cors to easily communicate and express.json to interpret packages from MongoDB as json
