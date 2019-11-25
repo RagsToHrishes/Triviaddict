@@ -32,7 +32,7 @@ class Settings extends React.Component{
         e.preventDefault();
         console.log(this.state);
 
-        axios.post("/api/user/updateprefs/hrish", this.state)
+        axios.post("/user/updateprefs/hrish", this.state)
     }
 
     /*

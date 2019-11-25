@@ -78,7 +78,7 @@ class Game extends React.Component{
         if(this.state.Qtype == "topic"){
 
             //first getting the settings from the user through the backend server and storing it in state
-            axios.get("/api/user?username=hrish").then(res => {
+            axios.get("/user?username=hrish").then(res => {
             this.setState({
                 strengths: res.data[0].strengths,
                 numOfQ: res.data[0].prefs.numOfQ,
@@ -241,7 +241,7 @@ class Game extends React.Component{
                 strengths: strengths
             }
             console.log(strengths)
-            axios.post("/api/user/updatestrengths/hrish",body)
+            axios.post("/user/updatestrengths/hrish",body)
 
 
             //Resetting all the state properties to begin a new session
