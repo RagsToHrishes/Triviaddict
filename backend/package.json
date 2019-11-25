@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./backend/server.js",
-    "server": "nodemon ./backend/server.js",
-    "client": "npm start --prefix ./triviaddict",
+    "start": "nodemon server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ../triviaddict",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "npm install --prefix ../triviaddict && npm run build --prefix ../triviaddict"
   },
   "keywords": [],
   "author": "",
