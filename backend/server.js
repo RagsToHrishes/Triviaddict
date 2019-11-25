@@ -7,6 +7,10 @@ const mongoose = require('mongoose');
 //Setting up environment variables with the .env file
 require('dotenv').config();
 
+
+//Setting up the app and port
+const app = express();
+
 if(process.env.NODE_ENV === "production"){
   app.use(express.static("../triviaddict/build "))
   app.get("*", (req,res) => {
@@ -14,8 +18,6 @@ if(process.env.NODE_ENV === "production"){
   })
 }
 
-//Setting up the app and port
-const app = express();
 const port = process.env.PORT || 5000;
 
 //Using cors to easily communicate and express.json to interpret packages from MongoDB as json
