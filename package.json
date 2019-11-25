@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "server": "nodemon server.js",
+    "start": "node server.js",
+    "server": "node server.js",
     "client": "npm start --prefix ../triviaddict",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "npm install --prefix ./triviaddict && npm run build --prefix ./triviaddict"
