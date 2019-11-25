@@ -20,7 +20,7 @@ if(process.env.NODE_ENV === "production"){
   })
 }
 //path.resolve(__dirname, "triviaddict", "build", "index.html")
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 4000;
 
 //Using cors to easily communicate and express.json to interpret packages from MongoDB as json
 app.use(cors());
