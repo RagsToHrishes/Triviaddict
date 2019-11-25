@@ -1,0 +1,83 @@
+div {
+    background-image: linear-gradient(rgb(255,174,61, 0), rgb(255,174,61, 1));
+    height: 100vh;
+}
+
+div > h1{
+    color: white;
+    text-align: center;
+    font-size: 64px;
+    font-weight: bold;
+    position: relative;
+    top: 60px;
+}
+
+div > #login{
+    color: white;
+    text-align: center;
+    font-size: 32px;
+    position: relative;
+    top: 60px;
+}
+
+input[type=text]{
+    position: relative;
+    top: 60px;
+    left: 44%;
+    border: 2px solid orange;
+    border-radius: 7.5px;
+    padding: 10px 10px;
+    margin: 0px 0;
+    width: 150px;
+}
+
+input[type=password]{
+    position: relative;
+    top: 60px;
+    left: 44%;
+    border: 2px solid orange;
+    border-radius: 7.5px;
+    padding: 10px 10px;
+    margin: 0px 0;
+    width: 150px;
+}
+
+input[type=submit]{
+    position: relative;
+    top: 60px;
+    left: 46.5%;
+    border-radius: 7.5px;
+    padding: 10px 10px;
+    margin: 0px 0;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    background: #F49164;
+    border-color: #F49164;
+}
+
+
+select{
+    padding: 10px 10px;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    background:#F49164; 
+    border-color: #F49164;
+    font-size: 20px;
+}
+
+button{
+    position: relative;
+    top: 60px;
+    left: 46.5%;
+    border-radius: 7.5px;
+    padding: 10px 10px;
+    margin: 0px 0;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    background: #F49164; 
+    border-color: #F49164;
+}
+
