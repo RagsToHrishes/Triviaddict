@@ -3,6 +3,8 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const path = require('path')
+
 
 //Setting up environment variables with the .env file
 require('dotenv').config();
